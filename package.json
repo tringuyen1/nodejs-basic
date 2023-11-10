@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-backend-zero",
+  "version": "1.0.0",
+  "description": "tri-nguyen-fullstack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tringuyen1/nodejs-basic.git"
+  },
+  "keywords": [
+    "nodeJs",
+    "react"
+  ],
+  "author": "tri nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tringuyen1/nodejs-basic/issues"
+  },
+  "homepage": "https://github.com/tringuyen1/nodejs-basic#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}

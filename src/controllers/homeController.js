@@ -1,7 +1,7 @@
 const { connection } = require("../config/database");
 
 const getHomePage = (req, res) => {
-     res.send('Hello World!') // hiển thị
+     return res.render("home.ejs");
 }
 
 const getSample = (req, res) => {
@@ -16,7 +16,13 @@ const getSample = (req, res) => {
      );
 }
 
+const postCreateUser = (req, res) => {
+     console.log("check >>>:", req.body)
+     res.send("create a new user")
+}
+
 module.exports = {
      getHomePage,
-     getSample
+     getSample,
+     postCreateUser
 };

@@ -17,8 +17,17 @@ const getSample = (req, res) => {
 }
 
 const postCreateUser = (req, res) => {
-     console.log("check >>>:", req.body)
-     res.send("create a new user")
+     const { email, name, city } = req.body;
+     connection.query(
+          `INSERT INTO Users (email, name, city) 
+          VALUES (?,?,?)`, // ? lấy động dữ liệu
+          [email, name, city],
+          function (err, results) {
+               console.log(results);
+               res.send("create a new user success");
+          }
+     );
+
 }
 
 module.exports = {
